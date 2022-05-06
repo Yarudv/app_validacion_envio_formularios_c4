@@ -1,5 +1,5 @@
 import random
-
+import time
 print("Bienvenido a nuestra app")
 inicio = int(input("Opcion 1 para registrarse / Opcion 2 para enviar formularios: "))
 if inicio == 1:
@@ -55,30 +55,44 @@ else:
         var1= str(formu_aleatorio(formularios))
         print("Enviando formulario", var1, "al usuario", usuarios[0],"...")
         lista_a.append(var1)
+        time.sleep(3)
+        print("El formulario",var1,"ha sido enviado satisfactoriamente")
     for b in range(5):
         var2= str(formu_aleatorio(formularios))
         print("Enviando formulario", var2, "al usuario", usuarios[1],"...")
         lista_b.append(var2)
+        time.sleep(3)
+        print("El formulario",var2,"ha sido enviado satisfactoriamente")
     for c in range(5):
         var3= str(formu_aleatorio(formularios))
         print("Enviando formulario", var3, "al usuario", usuarios[2],"...")
         lista_c.append(var3)
+        time.sleep(3)
+        print("El formulario",var3,"ha sido enviado satisfactoriamente")
     for d in range(5):
         var4= str(formu_aleatorio(formularios))
         print("Enviando formulario", var4, "al usuario", usuarios[3],"...")
         lista_d.append(var4)
+        time.sleep(3)
+        print("El formulario",var4,"ha sido enviado satisfactoriamente")
     for e in range(5):
         var5= str(formu_aleatorio(formularios))
         print("Enviando formulario", var5, "al usuario", usuarios[4],"...")
         lista_e.append(var5)
+        time.sleep(3)
+        print("El formulario",var5,"ha sido enviado satisfactoriamente")
     for f in range(5):
         var6= str(formu_aleatorio(formularios))
         print("Enviando formulario", var6, "al usuario", usuarios[5],"...")
         lista_f.append(var6)
+        time.sleep(3)
+        print("El formulario",var6,"ha sido enviado satisfactoriamente")
     for g in range(5):
         var7= str(formu_aleatorio(formularios))
         print("Enviando formulario", var7, "al usuario", usuarios[6],"...")
         lista_g.append(var7)
+        time.sleep(3)
+        print("El formulario",var7,"ha sido enviado satisfactoriamente")
 print("El usuario", usuarios[0], "se le enviaron los siguientes formularios: ", lista_a)
 print("El usuario", usuarios[1], "se le enviaron los siguientes formularios: ", lista_b)
 print("El usuario", usuarios[2], "se le enviaron los siguientes formularios: ", lista_c)
