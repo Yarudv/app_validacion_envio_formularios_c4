@@ -44,6 +44,9 @@ else:
     e = 0
     f = 0
     g = 0
+    i = 0
+    j = 0
+    k = 0
     lista_a = []
     lista_b =[]
     lista_c = []
@@ -93,10 +96,11 @@ else:
         lista_g.append(var7)
         time.sleep(3)
         print("El formulario",var7,"ha sido enviado satisfactoriamente")
-print("El usuario", usuarios[0], "se le enviaron los siguientes formularios: ", lista_a)
-print("El usuario", usuarios[1], "se le enviaron los siguientes formularios: ", lista_b)
-print("El usuario", usuarios[2], "se le enviaron los siguientes formularios: ", lista_c)
-print("El usuario", usuarios[3], "se le enviaron los siguientes formularios: ", lista_d)
-print("El usuario", usuarios[4], "se le enviaron los siguientes formularios: ", lista_e)
-print("El usuario", usuarios[5], "se le enviaron los siguientes formularios: ", lista_f)
-print("El usuario", usuarios[6], "se le enviaron los siguientes formularios: ", lista_g)
+    lista_total = [lista_a, lista_b, lista_c, lista_d, lista_e, lista_f, lista_g] 
+    for i in range(len(lista_total)):
+        print("Para el usuario", usuarios[i], "los formularios enviados son: ", lista_total[i])
+       
+            
+
+
+
